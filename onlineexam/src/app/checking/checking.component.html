@@ -1,0 +1,13 @@
+<label>Username</label> <input type="text" name="username" [(ngModel)]="username">
+
+    <label>Question</label><input type="text" name="question" [value]="question">
+
+    <label>Answer</label><input type="text" name="answer" [(ngModel)]="answer">
+    
+    <label *ngIf="show">Enter new password</label> <input type="text" name="password" [(ngModel)]="password" *ngIf="show">
+
+    <input type="button" value="updatePassword" (click)="updatePassword()" *ngIf="show">
+      
+    <input type="button" value="check" (click)="checking()">
+
+    <span style="color: red;font-size: 20px;">{{message}}</span>

@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+div {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="button"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+input[type="button"][value="addQuestion"] {
+    background-color: #28a745; /* Green */
+}
+
+input[type="button"][value="viewQuestion"] {
+    background-color: #17a2b8; /* Blue */
+}
+
+input[type="button"][value="deleteQuestion"] {
+    background-color: #dc3545; /* Red */
+}
+
+input[type="button"][value="updateQuestion"] {
+    background-color: #ffc107; /* Yellow */
+}
+
+input[type="button"]:hover {
+    opacity: 0.8;
+}
+
+/* Style for displaying messages */
+.message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #28a745;
+}

@@ -1,0 +1,36 @@
+<form>
+
+    <input name="subject" [(ngModel)]="subject">
+
+    <input type="button" value="showRecords" (click)="showRecords()">
+
+</form>
+
+<br>
+
+<table *ngIf="show">
+
+
+    <tr>
+    
+        <th>name</th>
+        
+        <th>subject</th>
+        
+        <th>score</th>
+        
+    </tr>
+    
+    <tr *ngFor="let result of results">
+    
+        <td>{{result.username}}</td>
+    
+        <td>{{result.subject}}</td>
+    
+        <td>{{result.score}}</td>
+    
+    </tr>
+    
+    </table><br>
+    <input  type=button  *ngFor="let pageno of pages" [value]="pageno" (click)="getResults2(pageno)">
+

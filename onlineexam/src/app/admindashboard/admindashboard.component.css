@@ -1,0 +1,38 @@
+input[type="button"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-items: center;
+   
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="button"]:active {
+    transform: scale(0.98); /* Slightly reduces the button size to mimic a press effect */
+}
+
+/* Optional: Specific styles for each button based on value attribute, if you want to differentiate them */
+input[type="button"][value="View Result"] {
+    background-color: #28a745; /* Green */
+    margin-right: 10px;
+}
+
+input[type="button"][value="View Result"]:hover {
+    background-color: #218838;
+}
+
+input[type="button"][value="Manage Questions"] {
+    background-color: #17a2b8; /* Blueish */
+}
+
+input[type="button"][value="Manage Questions"]:hover {
+    background-color: #138496;
+}

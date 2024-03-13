@@ -1,0 +1,45 @@
+<form>
+    
+    <input type="text"  name ="username" [(ngModel)] ="user.username">
+  
+    <input type="text" name ="password" [(ngModel)] ="user.password">
+   
+    <input type="text" name ="number" [(ngModel)] ="user.mobno">
+    
+    <input type="text" name ="password" [(ngModel)] ="user.emailid">
+    <br>
+  
+    <input type="button"  value="postdata" (click)="saveToDB()">
+   
+    <input type="button"  value="getUser" (click)="getUser()">
+    
+    <input type="button"  value="deleteUser" (click)="deleteUser()">
+</form>
+
+{{message}}
+
+
+<table>
+    
+    <tr>
+        <th> username </th>
+
+        <th> password </th>
+
+        <th> mobno </th>
+
+        <th> emailid </th>
+    </tr>
+
+    <tr *ngFor="let user of users">
+
+        <td> {{user.username}} </td>
+
+        <td> {{user.emailid}} </td>
+
+        <td> {{user.mobno}} </td>
+
+        <td> {{user.password}} </td>
+
+    </tr>
+</table>

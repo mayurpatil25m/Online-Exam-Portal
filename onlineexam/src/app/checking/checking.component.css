@@ -1,0 +1,43 @@
+/* General reset for body to remove default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Using Arial for simplicity, change as needed */
+}
+
+/* Styling for all labels */
+label {
+    display: block; /* Makes each label appear on a new line */
+    margin: 10px 0 5px; /* Adds some space above each label */
+    font-size: 16px; /* Sets a readable font size */
+    color: #333; /* Dark gray color for text */
+}
+
+/* Styling for all input fields (text and button) */
+input[type="text"], input[type="button"] {
+    display: block; /* Makes each input appear on a new line */
+    width: 100%; /* Makes input fields take full width of their container */
+    padding: 10px; /* Adds some padding inside the input fields for better text visibility */
+    margin: 5px 0 20px; /* Adds some space around each input field */
+    box-sizing: border-box; /* Ensures padding doesn't affect the total width */
+}
+
+/* Specific styling for button inputs */
+input[type="button"] {
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over buttons */
+    background-color: #007bff; /* Sets a blue background color for buttons */
+    color: white; /* Sets text color to white for better contrast */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the buttons */
+}
+
+/* Styling for the span showing messages */
+span {
+    display: block; /* Makes the span appear on a new line */
+    margin-top: 20px; /* Adds some space above the span */
+}
+
+/* Optionally, if you want to hide elements without removing them from the DOM, you can use a class */
+.hidden {
+    display: none; /* Hides the element */
+}

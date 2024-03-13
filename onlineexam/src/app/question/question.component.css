@@ -1,0 +1,29 @@
+#span1 {
+    position: absolute; /* Absolute positioning relative to the first positioned (not static) ancestor */
+    top: 0; /* Align to the top of the ancestor */
+    right: 0; /* Align to the right of the ancestor */
+    color: brown; /* Keeping your original color */
+    font-size: 20px; /* Keeping your original font size */
+    margin: 10px; /* Adds some space from the top and right edges */
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Bootstrap primary color */
+    
+    cursor: pointer;
+    margin-right: 10px; /* Space between buttons */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+p {
+    font-size: 24px; /* Larger font size for emphasis */
+    color:#0056b3; /* Dark grey for readability */
+    margin-bottom: 20px; /* Space after the welcome message */
+}

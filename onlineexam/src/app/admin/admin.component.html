@@ -1,0 +1,32 @@
+   <h1>Question Section</h1>
+    <div>
+    <form>
+    
+        Qno:- <input type="text" name="qno"  [(ngModel)]="question.qno"><br><br>
+        
+        Question:- <input type="text" name="qtext"  [(ngModel)]="question.qtext"><br><br>
+            
+        Option1 :- <input type="text" name="op1"  [(ngModel)]="question.op1"><br><br>
+        
+        Option2 :- <input type="text" name="op2"  [(ngModel)]="question.op2"><br><br>
+            
+        Option3 :- <input type="text" name="op3"  [(ngModel)]="question.op3"><br><br>
+        
+        Option4 :- <input type="text" name="op4"  [(ngModel)]="question.op4"><br><br>
+            
+        Answer :- <input type="text" name="answer"  [(ngModel)]="question.answer"><br><br>
+        
+        Subject :- <input type="text" name="subject" [(ngModel)]="question.subject"><br><br>
+            
+        <input type="button" value="addQuestion" (click)="addQuestion()">
+       
+        <input type="button" value="viewQuestion" (click)="viewQuestion()">
+      
+        <input type="button" value="deleteQuestion" (click)="deleteQuestion()">
+       
+        <input type="button" value="updateQuestion" (click)="updateQuestion()">
+        
+    </form>
+    </div>
+
+    {{message}}

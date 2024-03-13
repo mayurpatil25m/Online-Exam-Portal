@@ -1,0 +1,39 @@
+<html>
+    <body>
+
+     <p>Welcome {{username}} your exam has already started. All The Best!!</p> 
+
+     <span id="span1" style="color: brown ; font-size: 20px;">{{durationMessage}}</span>
+
+    
+
+     <form name="qestionForm">
+
+        
+        <input style="border: none;" type="text" name="qno" [(ngModel)]="question.qno">
+        <br><br>
+        <input style="border: none;" type="text" name="qtext" [(ngModel)]="question.qtext" size="100">
+        <br>
+        <br>
+        <input name="options" (change)="saveAnswer()" type="radio" [checked]="isChecked(question.op1)" [value]="question.op1" [(ngModel)]="submittedAnswer" class="css-checkbox" name="radioModel" [(ngModel)]="selected"><span [style.color]="getColor(question.op1)">{{question.op1}}</span>
+        <br><br>
+        <input   name="options" (change)="saveAnswer()" type="radio" [checked]="isChecked(question.op2)"  [value]="question.op2" [(ngModel)]="submittedAnswer" class="css-checkbox" name="radioModel" [(ngModel)]="selected"><span [style.color]="getColor(question.op2)">{{question.op2}}</span>
+        <br><br> 
+        <input   name="options" (change)="saveAnswer()" type="radio" [checked]="isChecked(question.op3)" [value]="question.op3" [(ngModel)]="submittedAnswer" class="css-checkbox" name="radioModel" [(ngModel)]="selected" ><span [style.color]="getColor(question.op3)" >{{question.op3}}</span>
+        <br><br> 
+        <input   name="options" (change)="saveAnswer()"  type="radio" [checked]="isChecked(question.op4)" [value]="question.op4" [(ngModel)]="submittedAnswer" class="css-checkbox" name="radioModel" [(ngModel)]="selected"><span [style.color]="getColor(question.op4)">{{question.op4}}</span>
+        <br><br>
+
+        <input  type= "button"  *ngFor="let qno of allqnos" [value]="qno" (click)="getQuestion($event)">
+
+        <input type="hidden" [value]="question.answer"><br><br>
+
+        <input type="button" value="Previous" (click)="previousQuestion()">
+
+        <input type="button" value="Next" (click)="nextQuestion()">
+
+        <input type="button" value="Submit" (click)="endexam()"><br><br>
+        
+     </form>
+    </body>
+</html>

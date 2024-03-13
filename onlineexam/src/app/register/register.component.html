@@ -1,0 +1,26 @@
+
+
+<form>
+
+    <h2>Registration Form</h2>
+
+    <label>Username</label>
+    <input type="text" name="username" [(ngModel)]="user.username">
+
+    <label>Password</label>
+    <input type="text" name="password" [(ngModel)]="user.password">
+
+    <label>Mobile No.</label>
+    <input type="number" name="mobno" [(ngModel)]="user.mobno">
+
+    <label>Email Id</label>
+    <input type="text" name="emailid" [(ngModel)]="user.emailid">
+
+    <label>Question</label><input type="text" name="question" [value]="question">
+
+    <label>Answer</label><input type="text" name="answer" [(ngModel)]="answer">
+   
+    <input type="button" value="Register" (click)="saveToDB()">
+
+
+</form>

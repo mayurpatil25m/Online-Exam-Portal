@@ -1,0 +1,33 @@
+
+
+
+<form>
+
+    <h2>Login Form</h2>
+
+    <input placeholder="Enter username" type="text" name="username" [(ngModel)]="user.username">
+    
+
+    <input type="text" placeholder="Enter password" name="password" [(ngModel)]="user.password">
+    
+
+    <select name="subject" [(ngModel)]="subject">
+
+    <option *ngFor="let subjectname of subjects" value="{{subjectname}}">{{subjectname}}</option>
+        
+
+    </select>
+
+    <input type="button" value="Student Login" (click)="validate()">
+
+    <input type="button" value="Admin Login" (click)="validate2()">
+
+    <input type="button" value="Sign in" (click)="validate()">
+    
+    <input type="button" value="Sign up" (click)="showRegister()">
+
+    <a href="checking()" style="color: blue;font-size: 18px; font-family:  'Arial Narrow', Arial, sans-serif;">Forget password</a>
+
+    
+    
+</form>

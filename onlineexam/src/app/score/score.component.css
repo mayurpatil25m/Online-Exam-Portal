@@ -1,0 +1,37 @@
+/* General styling for the paragraph displaying the score */
+p {
+    color: red; /* Retains your original color choice */
+    font-size: 30px; /* Retains your original font size */
+    text-align: center; /* Centers the text for emphasis */
+    margin-top: 20px; /* Adds some space above the paragraph */
+    font-family: Arial, sans-serif; /* Ensures a modern, readable font */
+}
+
+/* Styling for the table */
+table {
+    width: 100%; /* Makes the table stretch to the full width of its container */
+    border-collapse: collapse; /* Collapses borders between table cells */
+    margin-top: 20px; /* Adds space above the table */
+    font-family: Arial, sans-serif; /* Ensures a modern, readable font */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Adds a light grey border to table headers and cells */
+    text-align: left; /* Aligns text to the left */
+    padding: 8px; /* Adds padding inside table cells */
+}
+
+th {
+    background-color: #4CAF50; /* Adds a green background to headers for contrast */
+    color: white; /* Ensures text in headers is white for readability */
+}
+
+/* Styling for table rows based on the answer correctness */
+/* Note: This requires adding a CSS class or inline style dynamically based on the correctness of the answer */
+.correct-answer {
+    background-color: #dff0d8; /* Light green background for correct answers */
+}
+
+.incorrect-answer {
+    background-color: #f2dede; /* Light red background for incorrect answers */
+}
